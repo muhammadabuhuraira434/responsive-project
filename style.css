@@ -10,10 +10,16 @@
   --font-body: 'Open Sans', 'Roboto', sans-serif;
 }
 
+/* dark mode overrides, toggled via JS adding .dark-mode to <body> */
 body.dark-mode {
   --cream: #23211d;
   --text-dark: #ECE8E0;
   --white: #2E2B26;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 * {
@@ -81,6 +87,12 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   font-weight: 600;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .nav-toggle,
 .mode-toggle {
   background: none;
@@ -88,11 +100,18 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   color: var(--white);
   font-size: 1.4rem;
   cursor: pointer;
+  line-height: 1;
 }
 
 .hero {
   text-align: center;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
 }
 
 .hero p {
@@ -122,12 +141,14 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
   padding: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  min-width: 0;
 }
 
 .main-content {
   background: var(--white);
   border-radius: 12px;
   padding: 1.5rem;
+  min-width: 0;
 }
 
 .card-grid {
@@ -182,10 +203,6 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
     width: auto;
     order: 2;
     margin-top: 0;
-  }
-
-  .mode-toggle {
-    order: 3;
   }
 
   .card-grid {
