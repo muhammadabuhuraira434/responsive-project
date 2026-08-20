@@ -10,7 +10,6 @@
   --font-body: 'Open Sans', 'Roboto', sans-serif;
 }
 
-/* dark mode overrides, toggled via JS adding .dark-mode to <body> */
 body.dark-mode {
   --cream: #23211d;
   --text-dark: #ECE8E0;
