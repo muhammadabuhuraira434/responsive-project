@@ -12,10 +12,6 @@
     <nav class="navbar">
       <div class="logo">The Daily Grind</div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        &#9776;
-      </button>
-
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#menu">Menu</a></li>
@@ -23,8 +19,12 @@
         <li><a href="#contact">Visit Us</a></li>
       </ul>
 
-      <!-- little dark mode toggle, top right of nav -->
-      <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="nav-actions">
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          &#9776;
+        </button>
+      </div>
     </nav>
 
     <div class="hero">
@@ -39,7 +39,7 @@
     <main class="main-content" id="menu">
       <h2>What's on the counter today</h2>
 
-      <!-- these scroll sideways on phones instead of stacking, feels less like a wall of boxes -->
+    
       <div class="card-grid">
         <article class="card">
           <h3>Flat White</h3>
