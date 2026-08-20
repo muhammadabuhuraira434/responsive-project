@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Grind | Coffee & Pastries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <div class="logo">The Daily Grind</div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        &#9776;
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Visit Us</a></li>
+      </ul>
+
+      <!-- little dark mode toggle, top right of nav -->
+      <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+
+    <div class="hero">
+      <h1>Good coffee, no rush.</h1>
+      <p>Small-batch roasts and fresh pastries, baked every morning before 6am.</p>
+      <button class="btn-primary" id="ctaBtn">See Today's Menu</button>
+    </div>
+  </header>
+
+  <div class="page-grid">
+
+    <main class="main-content" id="menu">
+      <h2>What's on the counter today</h2>
+
+      <!-- these scroll sideways on phones instead of stacking, feels less like a wall of boxes -->
+      <div class="card-grid">
+        <article class="card">
+          <h3>Flat White</h3>
+          <p>Double ristretto shot, steamed milk, a thin layer of foam. Our most-ordered drink, hands down.</p>
+        </article>
+        <article class="card">
+          <h3>Cinnamon Roll</h3>
+          <p>Made fresh at 5am. Usually gone by 10. Get here early if you want one warm.</p>
+        </article>
+        <article class="card">
+          <h3>Cold Brew</h3>
+          <p>Steeped for 18 hours. Smooth, low acidity, no bitterness. Great with oat milk.</p>
+        </article>
+        <article class="card">
+          <h3>Almond Croissant</h3>
+          <p>Twice-baked, filled with almond cream. Honestly our best seller after the cinnamon rolls.</p>
+        </article>
+      </div>
+    </main>
+
+    <aside class="sidebar" id="about">
+      <h3>About the shop</h3>
+      <p>We started as a two-person operation out of a rented kitchen in 2019. Still small, still stubborn about doing things the slow way — grinding beans to order and baking everything on site.</p>
+      <p>Open Tuesday to Sunday, 7am till 3pm. Closed Mondays (that's when we restock).</p>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <p>Come say hi — 214 Miller Street</p>
+    <p>&copy; <span id="year"></span> The Daily Grind</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
